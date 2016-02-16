@@ -22,7 +22,7 @@ var Engine = (function(global) {
     var doc = global.document,
         win = global.window,
         canvas = doc.createElement('canvas'),
-        ctx = canvas.getContext('2d'),
+        ctx = canvas.getContext('2d'),patterns = {},
         lastTime;
 
     canvas.width = 505;
@@ -172,7 +172,8 @@ var Engine = (function(global) {
         'images/water-block.png',
         'images/grass-block.png',
         'images/enemy-bug.png',
-        'images/char-boy.png'
+        'images/char-boy.png',
+        'images/Heart.png'
     ]);
     Resources.onReady(init);
 
